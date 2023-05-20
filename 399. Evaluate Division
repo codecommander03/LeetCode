@@ -1,0 +1,58 @@
+class Solution {
+public:
+    void dfs(map<string,double>&m,map<string,vector<string>>&graph,map<string,bool>&vis,string start,string end,double& num,bool& found){
+        if(found) return;
+        vis[start] = true;
+
+        for(auto &i: graph[start]){
+            if(!vis[i]){
+                num *= m[start+"/"+i];
+                if(i == end){
+                    found = true;
+                    return;
+                }
+                dfs(m,graph,vis,i,end,num,found);
+                if(found) return;
+                else num /= m[start+"/"+i];
+            }
+        }
+    }
+    vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {
+        vector<double> ans;
+        map<string,double> m;
+        map<string,vector<string>> graph;
+
+        for(int i=0;i<equations.size();i++){
+            string &a = equations[i][0];
+            string &b = equations[i][1];
+
+            m[a+"/"+b] = values[i];
+            m[b+"/"+a] = 1/values[i];
+
+            graph[a].emplace_back(b);
+            graph[b].emplace_back(a);
+        }
+
+        for(int i=0;i<queries.size();i++){
+            string start = queries[i][0];
+            string end = queries[i][1];
+
+            if(graph.find(start)==graph.end()||graph.find(end)==graph.end()) ans.push_back(-1);
+            else{
+                if(start==end){
+                    ans.push_back(1);
+                }
+                else{
+                    double num = 1;
+                    map<string,bool> vis;
+                    bool found = false;
+                    dfs(m,graph,vis,start,end,num,found);
+                    if(found) ans.emplace_back(num);
+                    else ans.push_back(-1);
+                }
+
+            }
+        }
+        return ans;
+    }
+};
