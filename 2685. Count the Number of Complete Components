@@ -1,0 +1,45 @@
+class Solution {
+public:
+    vector<bool> vis1;
+    vector<bool> vis2;
+    vector<vector<int>> gr;
+    void dfs(int x,int&cnt){
+        if(vis1[x]) return;
+        vis1[x]=true;
+        cnt++;
+        for(auto &i: gr[x]){
+            dfs(i,cnt);
+        }
+    }
+    void valid(int x,int total,int&res){
+        if(vis2[x]) return;
+        vis2[x] = true;
+        for(auto &i: gr[x]){
+            if(gr[i].size()!=total) {
+                res=0;
+                return;
+            }
+            valid(i,total,res);
+        }
+    }
+    int countCompleteComponents(int n, vector<vector<int>>& edges) {
+        vis1.resize(n,false);
+        vis2.resize(n,false);
+        gr.resize(n);
+        for(auto it: edges){
+            gr[it[0]].push_back(it[1]);
+            gr[it[1]].push_back(it[0]);
+        }
+        int ans=0;
+        for(int i=0;i<n;i++){
+            if(!vis1[i]){
+                int cnt=-1;
+                dfs(i,cnt);
+                int x=1;
+                valid(i,cnt,x);
+                ans+=x;
+            }
+        }
+        return ans;
+    }
+};
