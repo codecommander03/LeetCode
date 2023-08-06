@@ -1,0 +1,21 @@
+class Solution {
+public:
+    long long maximumOr(vector<int>& nums, int k) {
+        int n = nums.size();
+        vector<long long> pre(n),pos(n);
+        pre[0]=nums[0];
+        pos[n-1]=nums[n-1];
+        for(int i=1;i<n;i++) pre[i] = (pre[i-1]|nums[i]);
+        for(int i=n-2;i>=0;i--) pos[i] = (pos[i+1]|nums[i]);
+
+        int num = (1<<k);
+        long long ans = 0;
+        for(int i=0;i<n;i++){
+            long long x = num * 1LL*nums[i];
+            if(i) x |= pre[i-1];
+            if(i<n-1) x |= pos[i+1];
+            ans=max(ans,x);
+        }
+        return ans;
+    }
+};
