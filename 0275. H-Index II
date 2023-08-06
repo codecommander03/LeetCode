@@ -1,0 +1,21 @@
+class Solution {
+public:
+    bool cal(vector<int>& c,int t){
+        int cnt = c.size();
+        for(int it: c){
+            if(it<t) cnt--;
+            if(cnt<t) return false;
+        }
+        return true;
+    }
+    int hIndex(vector<int>& citations) {
+        int n = citations.size();
+        int l=0,r=n;
+        while(l<r){
+            int mid = (r+l+1)/2;
+            if(cal(citations,mid)) l=mid;
+            else r=mid-1;
+        }
+        return l;
+    }
+};
