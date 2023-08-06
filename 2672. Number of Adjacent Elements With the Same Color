@@ -1,0 +1,21 @@
+class Solution {
+public:
+    vector<int> colorTheArray(int n, vector<vector<int>>& queries) {
+        vector<int> ans;
+        vector<int> color(n,0);
+        int prev=0;
+        for(auto v: queries){
+            int ind=v[0],col=v[1];
+            int initial=0;
+            if(ind>0 && color[ind]!=0 && color[ind-1]==color[ind]) initial++;
+            if(ind<n-1 && color[ind]!=0 && color[ind]==color[ind+1]) initial++;
+            color[ind] = col;
+            int final=0;
+            if(ind>0 && color[ind-1]==col) final++;
+            if(ind<n-1 && col==color[ind+1]) final++;
+            ans.push_back(prev+final-initial);
+            prev += final-initial;
+        }
+        return ans;
+    }
+};
