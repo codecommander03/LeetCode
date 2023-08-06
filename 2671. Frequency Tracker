@@ -1,0 +1,32 @@
+class FrequencyTracker {
+public:
+    vector<int> v;
+    unordered_map<int,int> m;
+    FrequencyTracker() {
+        v.resize(1e5+1);
+    }
+    
+    void add(int x) {
+        if(v[x]>0){
+            m[v[x]]--;
+            if(m[v[x]]==0){
+                m.erase(v[x]);
+            }
+        }
+        v[x]++;
+        m[v[x]]++;
+    }
+    
+    void deleteOne(int x) {
+        if(v[x]){
+            m[v[x]]--;
+            if(m[v[x]]==0) m.erase(v[x]);
+            v[x]--;
+            m[v[x]]++;
+        }
+    }
+    
+    bool hasFrequency(int x) {
+        return m.count(x);
+    }
+};
