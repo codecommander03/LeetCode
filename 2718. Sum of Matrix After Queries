@@ -1,0 +1,21 @@
+class Solution {
+public:
+    long long matrixSumQueries(int n, vector<vector<int>>& queries) {
+        long long ans=0,cntr=0,cntc=0;
+        unordered_set<int> r,c;
+        for(int i=queries.size()-1;i>=0;i--){
+            auto q = queries[i];
+            if(q[0]==0 && r.find(q[1])==r.end()){
+                cntr++;
+                r.insert(q[1]);
+                ans += 1LL*q[2]*(n-cntc);
+            }
+            else if(q[0]==1 && c.find(q[1])==c.end()){
+                cntc++;
+                c.insert(q[1]);
+                ans += 1LL * q[2] * (n-cntr);
+            }
+        }
+        return ans;
+    }
+};
