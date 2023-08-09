@@ -1,0 +1,14 @@
+class Solution {
+public:
+    int makeTheIntegerZero(int num1, int num2) {
+        long long t = num1;
+        int cnt =0;
+        while(t>num2){
+            t -= num2;
+            cnt++;
+            int k = __builtin_popcountll(t);
+            if(t>=cnt && k<=cnt) return cnt;
+        }
+        return -1;
+    }
+};
