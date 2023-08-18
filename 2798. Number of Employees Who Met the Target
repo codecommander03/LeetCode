@@ -1,0 +1,8 @@
+class Solution {
+public:
+    int numberOfEmployeesWhoMetTarget(vector<int>& hours, int target) {
+        int res=0;
+        for(int i: hours) res += i>=target;
+        return res;
+    }
+};
