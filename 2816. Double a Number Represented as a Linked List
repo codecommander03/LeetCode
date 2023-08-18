@@ -1,0 +1,33 @@
+class Solution {
+public:
+    ListNode* doubleIt(ListNode* head) {
+        string s = "";
+        ListNode* temp = head;
+        while(temp){
+            s.push_back(temp->val+'0');
+            temp = temp->next;
+        }
+        int carry=0;
+        reverse(begin(s),end(s));
+        for(int i=0;i<s.size();i++){
+            int sum = 2*(s[i]-'0') + carry;
+            s[i] = sum%10+'0';
+            carry = sum/10;
+        }
+        if(carry) s.push_back('1');
+
+        ListNode* ans=head;
+        temp = head;
+        if(head->val>=5){
+            ans = new ListNode(1);
+            ans -> next = head;
+            s.pop_back();
+        }
+        while(temp){
+            temp->val = *s.rbegin()-'0';
+            s.pop_back();
+            temp = temp->next;
+        }
+        return ans;
+    }
+};
