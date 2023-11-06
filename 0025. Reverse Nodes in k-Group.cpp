@@ -1,5 +1,3 @@
-https://leetcode.com/problems/reverse-nodes-in-k-group/description/
-
 class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
