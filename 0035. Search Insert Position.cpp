@@ -1,5 +1,3 @@
-https://leetcode.com/problems/search-insert-position/
-
 class Solution {
 public:
     int binary(vector<int>nums,int l,int r,int target){
