@@ -1,5 +1,3 @@
-https://leetcode.com/problems/valid-sudoku/
-
 class Solution {
 public:/*
     int boxn(int x,int y){/*
