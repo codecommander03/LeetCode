@@ -1,5 +1,3 @@
-https://leetcode.com/problems/validate-binary-search-tree/
-
 class Solution {
 public:
     bool helper(TreeNode* root,long min,long max){
