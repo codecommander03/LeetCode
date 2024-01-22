@@ -1,5 +1,3 @@
-https://leetcode.com/problems/same-tree/
-
 class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
