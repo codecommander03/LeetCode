@@ -1,5 +1,3 @@
-https://leetcode.com/problems/symmetric-tree/
-
 class Solution {
 public:
     bool compare(TreeNode* n1,TreeNode* n2){
