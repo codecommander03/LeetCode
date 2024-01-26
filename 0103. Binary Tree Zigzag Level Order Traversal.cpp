@@ -1,5 +1,3 @@
-https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
