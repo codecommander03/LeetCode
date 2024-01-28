@@ -1,5 +1,3 @@
-https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
-
 class Solution {
 public:
     TreeNode* helper(int &i,vector<int>&pr,vector<int>&in,int l,int r){
