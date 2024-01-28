@@ -1,5 +1,3 @@
-https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
-
 class Solution {
 public:
     TreeNode* helper(int &i,vector<int>& in,vector<int>& po,int l,int r){
