@@ -1,5 +1,3 @@
-https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-
 class Solution {
 public:
     TreeNode* helper(vector<int>& nums,int l,int r){
