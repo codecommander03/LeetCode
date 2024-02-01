@@ -1,5 +1,3 @@
-https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
-
 class Solution {
 public:
     TreeNode* construct(ListNode* l,ListNode* r){
