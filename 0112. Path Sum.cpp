@@ -1,5 +1,3 @@
-https://leetcode.com/problems/path-sum/
-
 class Solution {
 public:
     void helper(TreeNode* root,int sum,int target,int *ans){
