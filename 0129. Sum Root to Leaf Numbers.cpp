@@ -1,5 +1,3 @@
-https://leetcode.com/problems/sum-root-to-leaf-numbers/
-
 class Solution {
 public:
     void helper(TreeNode* root,int &ans,int n){
