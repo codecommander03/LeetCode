@@ -1,5 +1,3 @@
-https://leetcode.com/problems/sort-list/
-
 class Solution {
 public:
     ListNode* sortList(ListNode* head) {
