@@ -1,5 +1,3 @@
-https://leetcode.com/problems/binary-search-tree-iterator/
-
 class BSTIterator {
 public:
     stack<TreeNode*> s;
