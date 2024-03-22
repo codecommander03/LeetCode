@@ -1,5 +1,3 @@
-https://leetcode.com/problems/binary-tree-right-side-view/
-
 class Solution {
 public:
     vector<int> rightSideView(TreeNode* root) {
