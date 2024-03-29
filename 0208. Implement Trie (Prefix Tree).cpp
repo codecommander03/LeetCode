@@ -1,5 +1,3 @@
-https://leetcode.com/problems/implement-trie-prefix-tree/
-
 class TrieNode{
 public:
     TrieNode* children[26];
