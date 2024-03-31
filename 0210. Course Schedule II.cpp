@@ -1,5 +1,3 @@
-https://leetcode.com/problems/course-schedule-ii/
-
 class Solution {
 public:
 // https://www.geeksforgeeks.org/topological-sorting/
