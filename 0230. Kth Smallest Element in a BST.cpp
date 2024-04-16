@@ -1,5 +1,3 @@
-https://leetcode.com/problems/kth-smallest-element-in-a-bst/
-
 class Solution {
 public:
     priority_queue<int> pq;
