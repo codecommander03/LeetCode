@@ -1,5 +1,3 @@
-https://leetcode.com/problems/palindrome-linked-list/
-
 int init = [] {
     ios_base::sync_with_stdio(false); // turn off sync
     cin.tie(nullptr);  // untie in/out streams
