@@ -1,5 +1,3 @@
-https://leetcode.com/problems/move-zeroes/
-
 class Solution {
 public:
     void swap(vector<int> &nums,int &a,int &b){
