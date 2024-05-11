@@ -1,5 +1,3 @@
-https://leetcode.com/problems/bulls-and-cows/
-
 class Solution {
 public:
     int stoi(char c){
