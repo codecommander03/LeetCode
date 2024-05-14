@@ -1,5 +1,3 @@
-https://leetcode.com/problems/range-sum-query-2d-immutable/
-
 vector<vector<int>> dp;
     NumMatrix(vector<vector<int>>& matrix) {
         dp.resize(matrix.size()+1,vector<int>(matrix[0].size()+1));
