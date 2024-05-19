@@ -1,5 +1,3 @@
-https://leetcode.com/problems/coin-change/
-
 class Solution {
 public:
 int v[10000+1];
