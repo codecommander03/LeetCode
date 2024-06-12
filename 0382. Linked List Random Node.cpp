@@ -1,5 +1,3 @@
-https://leetcode.com/problems/linked-list-random-node/
-
 class Solution {
 public:
     ListNode* front;
