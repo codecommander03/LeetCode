@@ -1,5 +1,3 @@
-https://leetcode.com/problems/decode-string/
-
 class Solution {
 public:
     bool isdig(char c){
