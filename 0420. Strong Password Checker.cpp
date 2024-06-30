@@ -1,5 +1,3 @@
-https://leetcode.com/problems/strong-password-checker/
-
 class Solution {
 public:
     bool lower(char &c){
