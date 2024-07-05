@@ -1,5 +1,3 @@
-https://leetcode.com/problems/string-compression/
-
 class Solution {
 public:
     int compress(vector<char>& chars) {
