@@ -1,5 +1,3 @@
-https://leetcode.com/problems/longest-palindromic-subsequence/
-
 class Solution {
 public:
     //vector<vector<int>> v(1000,vector<int>(1000,0));
