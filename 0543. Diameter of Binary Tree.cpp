@@ -1,5 +1,3 @@
-https://leetcode.com/problems/diameter-of-binary-tree/
-
 class Solution {
 public:
     int helper(TreeNode* root,int &res){
