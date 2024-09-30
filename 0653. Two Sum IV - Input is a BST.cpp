@@ -1,5 +1,3 @@
-https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
-
 class Solution {
 public:
     void inorder(TreeNode* root,vector<int> &v){
