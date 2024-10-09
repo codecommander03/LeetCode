@@ -1,5 +1,3 @@
-https://leetcode.com/problems/top-k-frequent-words/
-
 class Solution {
 public:
     vector<string> topKFrequent(vector<string>& words, int k) {
