@@ -1,5 +1,3 @@
-https://leetcode.com/problems/insert-into-a-binary-search-tree/
-
 class Solution {
 public:
     void helper(TreeNode* root,TreeNode* temp){
