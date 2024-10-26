@@ -1,5 +1,3 @@
-https://leetcode.com/problems/minimum-distance-between-bst-nodes/
-
 class Solution {
 public:
     void help(TreeNode* root, set<int> &s){
