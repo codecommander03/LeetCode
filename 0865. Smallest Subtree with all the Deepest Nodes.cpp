@@ -1,5 +1,3 @@
-https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/
-
 class Solution {
 public:
     TreeNode* lca(TreeNode* root,TreeNode* l,TreeNode* r){
