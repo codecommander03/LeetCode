@@ -1,5 +1,3 @@
-https://leetcode.com/problems/koko-eating-bananas/
-
 class Solution {
 public:
     long long time(vector<int> &piles,int &k){
