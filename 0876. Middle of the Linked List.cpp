@@ -1,5 +1,3 @@
-https://leetcode.com/problems/middle-of-the-linked-list/
-
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
