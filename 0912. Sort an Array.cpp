@@ -1,5 +1,3 @@
-https://leetcode.com/problems/sort-an-array/
-
 class Solution {
 public:
     void merge(vector<int> &arr,int l,int mid,int r){
