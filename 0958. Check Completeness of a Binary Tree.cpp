@@ -1,5 +1,3 @@
-https://leetcode.com/problems/check-completeness-of-a-binary-tree/
-
 class Solution {
 public:
     bool isCompleteTree(TreeNode* root) {
