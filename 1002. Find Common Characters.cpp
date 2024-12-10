@@ -1,5 +1,3 @@
-https://leetcode.com/problems/find-common-characters/
-
 class Solution {
 public:
     vector<string> commonChars(vector<string>& words) {
