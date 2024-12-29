@@ -1,5 +1,3 @@
-https://leetcode.com/problems/longest-common-subsequence/
-
 class Solution {
 public:
     int arr[1001][1001];
