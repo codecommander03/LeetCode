@@ -1,5 +1,3 @@
-https://leetcode.com/problems/minimize-deviation-in-array/
-
 class Solution {
 public:
     int minimumDeviation(vector<int>& nums) {
