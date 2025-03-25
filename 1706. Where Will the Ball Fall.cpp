@@ -1,5 +1,3 @@
-https://leetcode.com/problems/where-will-the-ball-fall/
-
 class Solution {
 public:
     bool valid(int i,int j,int m,int n){
