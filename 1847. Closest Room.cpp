@@ -1,5 +1,3 @@
-https://leetcode.com/problems/closest-room/
-
 bool comparator(const vector<int>&a,const vector<int>&b)
 {
     return a[1] > b[1];
