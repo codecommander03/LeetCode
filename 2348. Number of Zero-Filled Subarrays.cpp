@@ -1,5 +1,3 @@
-https://leetcode.com/problems/number-of-zero-filled-subarrays/
-
 static auto _______ = [](){
     // turn off sync
     std::ios::sync_with_stdio(false);
