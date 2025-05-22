@@ -1,5 +1,3 @@
-https://leetcode.com/problems/longest-cycle-in-a-graph/description/
-
 class Solution {
 public:
     int longestCycle(vector<int>& edges) {
