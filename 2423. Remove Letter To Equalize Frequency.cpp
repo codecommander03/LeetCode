@@ -1,5 +1,3 @@
-https://leetcode.com/problems/remove-letter-to-equalize-frequency/
-
 class Solution {
 public:
     bool helper(vector<int> v){
