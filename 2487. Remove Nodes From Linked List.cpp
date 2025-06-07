@@ -1,5 +1,3 @@
-https://leetcode.com/problems/remove-nodes-from-linked-list/
-
 class Solution {
 public:
     ListNode* rev(ListNode* &head){
