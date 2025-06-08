@@ -1,5 +1,3 @@
-https://leetcode.com/problems/delete-greatest-value-in-each-row/
-
 class Solution {
 public:
     int deleteGreatestValue(vector<vector<int>>& grid) {
