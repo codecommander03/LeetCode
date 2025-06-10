@@ -1,5 +1,3 @@
-https://leetcode.com/problems/reward-top-k-students/
-
 class Solution {
 public:
     static bool comparator(pair<int,int> &a,pair<int,int> &b){
